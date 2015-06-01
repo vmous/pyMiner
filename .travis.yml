@@ -1,0 +1,18 @@
+# https://travis-ci.org/vmous/pyMiner
+sudo: false
+language: python
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+  - pypy
+  - pypy3
+os:
+  - linux
+  - osx
+install: python setup.py install --user
+script: nosetests
+notifications:
+  email: false
